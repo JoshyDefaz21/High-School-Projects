@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<!-- 	<div id="intro"> creates the title section of your website	 -->
+    <div id="intro">
+      <h1>Kurt Cobain</h2>
+  </div>
+    
+ 
+    </div>
+  
+  </div>
+<!-- 	<div id="aboutContainer"> creates the About Me section for your website	 -->
+    <div id="aboutContainer">
+    <body >
+		<h2>Who was Kurt cobain</h2>    
+		<p style="font-family:courier;">Kurt Donald Cobain (February 20, 1967 – April 5, 1994) was an American singer, songwriter, and musician. Cobain was the frontman of American rock band Nirvana. Cobain is remembered as one of the most iconic and influential rock musicians in the history of alternative rock. Ten years after his death, Eric Olsen of MSNBC wrote "In the intervening decade, Cobain, a small, frail but handsome man in life, has become an abstract Generation X icon, viewed by many as the "last real rock star" a messiah and martyr whose every utterance has been plundered and parsed."</p>     
+   
+  </div>
+
+
+
+<!--    Write about your favorite thing to do here!-->
+    <div class="container left"> 
+		 <img src="https://images2.persgroep.net/rcs/QfosAWRJVZ00XRm6HXEHN_mN7cM/diocontent/57909105/_fitwidth/763?appId=2dc96dd3f167e919913d808324cbfeb2&quality=0.8"/> 
+        <div>
+			<h2>How was his childhood</h2>    
+			  <p style="font-family:courier;">Cobain was born at Grays Harbor Hospital in Aberdeen, Washington, His parents was Wendy Elizabeth and Donal Leland Cobain. Cobain's family had a musical background. His maternal uncle, Chuck Fradenburg, played in a band called The Beachcombers; his aunt, Mari Earle, played guitar and performed in bands throughout Grays Harbor County; and his great-uncle, Delbert, had a career as an Irish tenor, making an appearance in the 1930 film King of Jazz. Kurt was described as being a happy and excitable child, who also exhibited sensitivity and care. His talent as an artist was evident from an early age, as he would draw his favorite characters from films and cartoons, such as the Creature from the Black Lagoon and Donald Duck, in his bedroom.</p>  
+        </div>
+    </div>
+
+  
+  
+  <!--    Write about your favorite animal here!-->
+    <div class="container right"> 
+		<img src="https://dx72k0ec4onep.cloudfront.net/brand/8980/nirvana-official-merchandise.jpg"/>    
+        <div>
+			<h2>The begin of Nirvana</h2>    
+			 <p style="font-family:courier;">During high school, Cobain rarely found anyone with whom he could play music. While hanging out at the Melvins' practice space, he met Novoselic, a fellow devotee of punk rock. Novoselic's mother owned a hair salon, and the pair occasionally practiced in the upstairs room of the salon. A few years later, Cobain tried to convince Novoselic to form a band with him by lending him a copy of a home demo recorded by Cobain's earlier band, Fecal Matter. After months of asking, Novoselic finally agreed to join Cobain, forming the beginnings of Nirvana.</p>  
+		    
+        </div>
+    </div>
+
+ 
+
+    <div class="container left">
+	 
+      <img src="http://wallsdesk.com/wp-content/uploads/2016/12/Kurt-Cobain-Images.jpeg"/> 
+        <div>
+			 <h2>Rapid Rise: 'Smells Like Teen Spirit'</h2>   
+			<p style="font-family:courier;">Nirvana's single "Smells Like Teen Spirit" became their biggest hit, pushing their album to no. 1 on the music charts and establishing Cobain as an exception songwriting talent of his era. 
+
+With Nirvana's popularity skyrocketing into the mainstream, Cobain was conflicted on the direction his music was going. As someone who built his artistry on anti-establishment sentiments, Cobain began feeling he was losing control of his future. He began using heroin to ease his stress and some health issues. </p>
+       
+         
+        </div>
+    </div>
+<div Class="Container Center">
+    <div>
+ 
+
+
+</body>
+
+</html>             
+
+CSS/////
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Josefin+Slab');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+}
+
+h1 {
+    font-family: 'Josefin Slab';
+    font-size: 48px;
+    color: blue;
+    margin: 20px;
+}
+
+#intro {
+    text-align: center;
+    background: url("https://www.biography.com/.image/t_share/MTQ2MjA0ODI5NTIwMjQxNjgx/kurt-cobain-wings-mtv-live-1993jpg-1.jpg");
+    background-size: cover;
+  	background-position: center;
+    height: 500px;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .5);
+    position: relative;
+    z-index: 2;
+}
+
+#intro img{
+    width: 160px;
+}
+
+#aboutContainer {
+    background: url("https://images.unsplash.com/photo-1530482817083-29ae4b92ff15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=44f4aebbd1e1371d5bf7dc22016c5d29&w=1000&q=80");
+    border: none;
+    padding: 60px;
+    min-height: auto;
+  color: White;
+}
+
+#aboutContainer+div { 
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px -2px 3px rgba(0, 0, 0, .25);
+}
+
+#aboutContainer h2 { 
+   
+    display: block;
+    width: 400px;
+  height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: 1px dotted black;
+} 
+#aboutContainer p { 
+  text-align: center;
+}
+.container { 
+ 	width: 100%;
+    padding: 40px;
+    border-bottom: 1px solid silver;
+  	 background-image: url("https://cdn.wallpapersafari.com/99/55/hpxQwG.jpg");
+    overflow:auto;
+}
+
+.container img {
+    height: 200px;
+    max-width: 90%;
+}
+
+.container div {
+    display: inline;
+}
+
+.container div h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.right {
+    text-align: right;
+}
+
+.right img {
+    float: right;
+    margin-left: 20px;
+}
+
+.left img {
+    float: left;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #intro {
+        height: 100vh;
+    }
+    #aboutMe { color: black;
+        width: 60%;
+    }
+    .container { 
+        text-align: center;
+        padding: 30px;
+    }
+    .container div {
+        display: block;
+    }
+    .container div p {
+        text-align: center;
+    }
+    .container img {
+        height: auto;
+        max-height: 200px;
+        max-width: 80%;
+        display: block;
+    }
+    .left img,
+    .right img {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+
+
