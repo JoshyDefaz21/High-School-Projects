@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+ <div id="moving-text"><h1>Trivia</h1></div>   
+  
+    <p> </p>
+  <div class="footer">
+ 
+  <button onclick="quiz()">Start</button>
+  <p> 
+  </p>
+  
+  
+  
+  </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
+
+css////
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Muli');
+
+body {
+    background-image: url("https://www.verified-pixel.com/wp-content/uploads/2019/01/League-of-Legends.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  background-attachment: auto;
+  background-size: cover;;
+    text-align: center;
+  
+}
+
+h1 {
+    font-family: "Ubuntu";
+    font-size: 60px;
+    color: #000033;
+  text-shadow: 3px 2px gold;
+}
+h2 {
+  color: whitesmoke;
+ 
+  
+}
+p {
+    font-family: "Muli";
+    font-size: 36px;
+    color: #ffffff;
+   text-shadow: 3px 2px red;
+  text-align: left, buttom;
+   
+  
+}
+
+button {
+    font-family: "Ubuntu";
+    font-size: 40px;
+    width: 180px;
+    background-color: #152A20;
+    color: goldenrod;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: table-footer-group, auto;
+  margin-top: 300px;
+    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+    position: relative;
+  animation: button 16s linear;
+}
+#moving-text {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+#moving-text h1 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+
+ /* Apply animation to this element */	
+ animation: moving-text 10s linear;
+}
+/* Move it (define the animation) */
+@keyframes moving-text {
+ 0%   { 
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }
+}
+@keyframes button {
+ 0%   { 
+ transform: translateX(700%); 		
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }
+}
+///////JavaScript/////
+function quiz() {
+
+	//alerts to greet the player
+    alert("Are you ready for this?");
+  alert("This trivia is about my favorite game, League of Legends");
+    alert("Let me see if you can do this challenge, it's not gonna be easy");
+
+    //first trivia question
+  var ask = prompt("First let me know, What is your favorite champion or character in League of legends?");
+    if (ask === true ) {
+		alert("I like that champion too, we have something in common ;)");
+    } 
+  alert("Alright, let's begin the game!");
+  
+    var ans1 = prompt("What's the continent where the League of Legends resides called?");
+    if (ans1 == "Valorian", "valorian") {
+		alert("Yeah! You know what i'm talking about");
+    } else {
+   		alert("Ups! that's not the answer, the correct answer is Valorian");  
+    }
+
+    //second trivia question
+    var ans2 = prompt("Who bears the title of (The Thunder's Roar?)");
+    if (ans2 == "Volibear", "VoliBear", "volibear") {
+		alert("Perfect! The cute broken bear ");
+    } else {
+    	alert("Incorrect! Uhh, the correct answer my friend, it's Volibear");
+    }
+    
+    //third trivia question
+    var ans3 = prompt("This Champion is known as the Dark Child, has the ability to control fire, and has a small companion. What is their name?");
+    if (ans3 == "Annie","annie","anie") {
+		alert("Correct! It was easy, i know");
+    } else {
+    	alert("Incorrect!, Sorry but the answer is Annie");  
+    }
+  //fourth trivia question
+    var ans4 = prompt("This Champion is a maniac- literally, a maniac. Also known as the Demon Jester, they carry two daggers. What is this lunatic's name?");
+    if (ans4 == "Shaco","shaco") {
+		alert("Correct! Great job!");
+    } else {
+    	alert("Incorrect! It's okay try with Shaco");  
+    }
+  //fifth trivia question
+    var ans5 = prompt("This Champion was known for carrying a mace, is known as the Master of Metal, and was made out of sickness and darkness. What is this brute's name?");
+    if (ans5 == "Mordekaiser","mordekaiser") {
+		alert("Correct! You did it!");
+    } else {
+    	alert("Incorrect! The correct answer is mordekaiser");  
+    }
+  alert("Thanks for playing :3, I hope you have a great day");
+}  
+
+  //closing bracket for the entire function - all the trivia questions must go before this bracket!
+
+
+
